@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Pro Template
 
-Currently, two official plugins are available:
+This is a versatile ReactJS template designed to kickstart your web development projects. It comes pre-configured with popular libraries and tools such as React Router DOM for routing, Tailwind CSS for styling, and TypeScript for type-checking your code. Additionally, it leverages ShadCN for reusable components, helping you build robust and scalable applications effortlessly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features:
+- **React Router DOM:** Enables declarative routing for your React applications, allowing you to navigate between different components seamlessly.
+- **Tailwind CSS:** A utility-first CSS framework that provides low-level utility classes to quickly build custom designs without writing CSS from scratch.
+- **TypeScript:** Adds static typing to JavaScript, offering improved code quality, better developer experience, and enhanced maintainability.
+- **Shadcn:** A library for creating and managing reusable components in React, promoting code reusability and maintainability.
 
-## Expanding the ESLint configuration
+## Installation:
+To use this template for your projects, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Add this repository as a remote :
+   ```bash
+   git remote add source https://github.com/OyeRishab/react-pro-template.git
+2. Fetch all branches :
+	```bash 
+	git fetch source
+3. Merge the branches from the source repository :
+	```bash
+	git merge source/main --allow-unrelated-histories
+#
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
